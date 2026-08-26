@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:32:20.221Z",
+  "generated_at": "2026-08-26T09:34:47.052Z",
   "unit": "per_1M_tokens",
   "currency": "USD",
   "fx": {
@@ -17,32 +17,32 @@
       "method": "direct-api",
       "status": "ok",
       "rows": 351,
-      "started": "2026-08-26T09:32:18.742Z",
-      "ended": "2026-08-26T09:32:18.878Z"
+      "started": "2026-08-26T09:34:43.632Z",
+      "ended": "2026-08-26T09:34:43.767Z"
     },
     {
       "provider": "litellm",
       "method": "direct-api",
       "status": "ok",
       "rows": 204,
-      "started": "2026-08-26T09:32:18.878Z",
-      "ended": "2026-08-26T09:32:18.930Z"
+      "started": "2026-08-26T09:34:43.767Z",
+      "ended": "2026-08-26T09:34:43.820Z"
     },
     {
       "provider": "google",
       "method": "public-page",
       "status": "ok",
       "rows": 0,
-      "started": "2026-08-26T09:32:18.930Z",
-      "ended": "2026-08-26T09:32:19.746Z"
+      "started": "2026-08-26T09:34:43.820Z",
+      "ended": "2026-08-26T09:34:44.896Z"
     },
     {
       "provider": "deepseek",
       "method": "public-page",
       "status": "ok",
       "rows": 1,
-      "started": "2026-08-26T09:32:19.746Z",
-      "ended": "2026-08-26T09:32:20.199Z"
+      "started": "2026-08-26T09:34:44.896Z",
+      "ended": "2026-08-26T09:34:47.028Z"
     },
     {
       "provider": "manual:browser-2026-08-26.json",
@@ -75,7 +75,7 @@
       "login_required_for_pricing": false,
       "enabled": true,
       "models_tracked": 351,
-      "last_collected": "2026-08-26T09:32:18.878Z",
+      "last_collected": "2026-08-26T09:34:43.767Z",
       "last_status": "ok"
     },
     {
@@ -93,7 +93,7 @@
       "login_required_for_pricing": false,
       "enabled": true,
       "models_tracked": 192,
-      "last_collected": "2026-08-26T09:32:18.930Z",
+      "last_collected": "2026-08-26T09:34:43.820Z",
       "last_status": "ok"
     },
     {
@@ -147,7 +147,7 @@
       "login_required_for_pricing": false,
       "enabled": true,
       "models_tracked": 8,
-      "last_collected": "2026-08-26T09:32:19.746Z",
+      "last_collected": "2026-08-26T09:34:44.896Z",
       "last_status": "ok"
     },
     {
@@ -164,8 +164,8 @@
       "automation": "public-page",
       "login_required_for_pricing": false,
       "enabled": true,
-      "models_tracked": 4,
-      "last_collected": "2026-08-26T09:32:20.199Z",
+      "models_tracked": 3,
+      "last_collected": "2026-08-26T09:34:47.028Z",
       "last_status": "ok"
     },
     {
@@ -638,15 +638,6 @@
   "cheapest_by_category": {
     "budget": [
       {
-        "key": "deepseek:off-peak",
-        "provider": "deepseek",
-        "model": "off-peak",
-        "input_usd": 0.007,
-        "output_usd": 0.022,
-        "blended_usd": 0.01075,
-        "basis": "list"
-      },
-      {
         "key": "openrouter:mistral-nemo",
         "provider": "openrouter",
         "model": "mistral-nemo",
@@ -680,6 +671,15 @@
         "input_usd": 0.03,
         "output_usd": 0.075,
         "blended_usd": 0.04125,
+        "basis": "list"
+      },
+      {
+        "key": "openrouter:l3-lunaris-8b",
+        "provider": "openrouter",
+        "model": "l3-lunaris-8b",
+        "input_usd": 0.04,
+        "output_usd": 0.05,
+        "blended_usd": 0.0425,
         "basis": "list"
       }
     ],
@@ -3686,7 +3686,7 @@
     }
   ],
   "counts": {
-    "models": 576,
+    "models": 575,
     "providers": 12,
     "promos_on_models": 7
   },
@@ -3731,7 +3731,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -3783,7 +3783,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -3835,7 +3835,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -3887,7 +3887,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -3939,7 +3939,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -3990,7 +3990,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4041,7 +4041,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4092,7 +4092,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4143,7 +4143,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openrouter/free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4194,7 +4194,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4246,7 +4246,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4298,7 +4298,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5.2:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4350,7 +4350,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thinkingmachines/inkling:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4402,7 +4402,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4454,7 +4454,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4505,7 +4505,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4556,7 +4556,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4607,7 +4607,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/lyria-3-clip-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4658,7 +4658,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/lyria-3-pro-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4709,7 +4709,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2.7:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4761,7 +4761,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m3:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4813,7 +4813,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4867,7 +4867,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4919,7 +4919,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -4971,7 +4971,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5023,7 +5023,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5075,7 +5075,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cohere/north-mini-code:free",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5127,65 +5127,13 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/stealth/ox-alpha",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
       "category": "free",
       "tags": [
         "free",
-        "budget"
-      ],
-      "hidden": false
-    },
-    {
-      "key": "deepseek:off-peak",
-      "provider": "deepseek",
-      "vendor": "deepseek",
-      "model_id": "off-peak",
-      "display_name": "off-peak",
-      "context": null,
-      "modality": null,
-      "openai_compatible": true,
-      "base_url": "https://api.deepseek.com/v1",
-      "currency": "USD",
-      "price": {
-        "input": 0.007,
-        "output": 0.022,
-        "cache_read": null,
-        "cache_write": null,
-        "currency": "USD"
-      },
-      "price_usd": {
-        "input": 0.007,
-        "output": 0.022,
-        "cache_read": null,
-        "cache_write": null
-      },
-      "promo": null,
-      "effective": {
-        "input_usd": 0.007,
-        "output_usd": 0.022,
-        "blended_usd": 0.01075,
-        "basis": "list",
-        "list_blended_usd": 0.01075
-      },
-      "long_context_surcharge": null,
-      "batch": null,
-      "is_free": false,
-      "deprecated": null,
-      "source": {
-        "method": "public-page",
-        "adapter": "public-page",
-        "url": "https://api-docs.deepseek.com/quick_start/pricing",
-        "collected_at": "2026-08-26T09:32:20.199Z",
-        "confidence": "page",
-        "evidence": "(CACHE HIT) | OFF-PEAK | $0.007 | $0.022 | $0.007 |"
-      },
-      "tier": "budget",
-      "category": "budget",
-      "tags": [
-        "open-weight",
         "budget"
       ],
       "hidden": false
@@ -5230,7 +5178,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-nemo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5281,7 +5229,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/inclusionai/ling-3.0-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5331,7 +5279,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/ibm-granite/granite-4.0-h-micro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5382,7 +5330,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5433,7 +5381,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/sao10k/l3-lunaris-8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5484,7 +5432,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nex-agi/nex-n2-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5534,7 +5482,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/upstage/solar-pro4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5638,7 +5586,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-oss-20b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5699,7 +5647,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.7-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5750,7 +5698,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-3.1-8b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5801,7 +5749,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-small-24b-instruct-2501",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5852,7 +5800,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/gryphe/mythomax-l2-13b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5902,7 +5850,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/amazon/nova-micro-v1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -5952,7 +5900,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-3-4b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6003,7 +5951,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/ibm-granite/granite-4.1-8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6054,7 +6002,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cohere/command-r7b-12-2024",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6105,7 +6053,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-oss-120b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6155,7 +6103,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-3.2-1b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6206,7 +6154,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6257,7 +6205,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-3-12b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6308,7 +6256,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/poolside/laguna-xs-2.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6358,7 +6306,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hy-mt2-1.8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6409,7 +6357,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-30b-a3b-instruct-2507",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6460,7 +6408,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6511,7 +6459,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6562,7 +6510,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6613,7 +6561,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/microsoft/phi-4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6664,7 +6612,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6715,7 +6663,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/ministral-3b-2512",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6766,7 +6714,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/rekaai/reka-edge",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6816,7 +6764,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/amazon/nova-lite-v1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6866,7 +6814,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-small-3.2-24b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6917,7 +6865,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/ministral-8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -6968,7 +6916,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7019,7 +6967,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7070,7 +7018,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/poolside/laguna-s-2.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7120,7 +7068,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-9b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7171,7 +7119,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-flash-02-23",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7222,7 +7170,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7273,7 +7221,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7325,7 +7273,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta/muse-spark-1.2-contributor",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7375,7 +7323,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen-2.5-7b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7426,7 +7374,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/rekaai/reka-flash-3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7476,7 +7424,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance/ui-tars-1.5-7b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7526,7 +7474,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hy-mt2-30b-a3b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7577,7 +7525,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hy-mt2-7b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7628,7 +7576,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-32b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7679,7 +7627,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-oss-safeguard-20b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7735,7 +7683,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-1.6-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7786,7 +7734,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7836,7 +7784,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7890,7 +7838,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5-nano",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -7962,7 +7910,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hy3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8013,7 +7961,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8064,7 +8012,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8116,7 +8064,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8167,7 +8115,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8218,7 +8166,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/ministral-8b-2512",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8269,7 +8217,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-14b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8320,7 +8268,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/stepfun/step-3.5-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8370,7 +8318,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/voxtral-small-24b-2507",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8421,7 +8369,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-4-31b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8472,7 +8420,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8523,7 +8471,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-4-scout",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8574,7 +8522,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-3-27b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8677,7 +8625,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8729,7 +8677,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8779,7 +8727,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8829,7 +8777,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8882,7 +8830,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-flash-lite",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8935,7 +8883,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4.1-nano",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -8985,7 +8933,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/xiaomi/mimo-v2.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9041,7 +8989,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-2.0-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9092,7 +9040,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-guard-4-12b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9143,7 +9091,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-32b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9195,7 +9143,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nousresearch/hermes-4-70b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9246,7 +9194,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/ministral-14b-2512",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9297,7 +9245,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9348,7 +9296,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-8b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9400,7 +9348,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-235b-a22b-2507",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9451,7 +9399,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-30b-a3b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9502,7 +9450,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-30b-a3b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9554,7 +9502,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/allenai/olmo-3-32b-think",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9606,7 +9554,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hunyuan-a13b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9657,7 +9605,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9709,7 +9657,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9760,7 +9708,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9811,7 +9759,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9861,7 +9809,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9911,7 +9859,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -9961,7 +9909,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10065,7 +10013,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cohere/command-r-08-2024",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10119,7 +10067,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10169,7 +10117,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o-mini-2024-07-18",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10219,7 +10167,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/kwaipilot/kat-coder-air-v2.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10270,7 +10218,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-small-2603",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10321,7 +10269,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/upstage/solar-pro-3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10372,7 +10320,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10422,7 +10370,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10474,7 +10422,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/tencent/hy3-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10525,7 +10473,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v3.2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10576,7 +10524,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-coder-next",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10628,7 +10576,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10679,7 +10627,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-saba",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10730,7 +10678,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v3.2-exp",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10781,7 +10729,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10832,7 +10780,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.5-air",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10883,7 +10831,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thedrummer/rocinante-12b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10933,7 +10881,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -10984,7 +10932,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11228,7 +11176,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11280,7 +11228,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11330,7 +11278,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thedrummer/cydonia-24b-v4.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11380,7 +11328,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-4-maverick",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11431,7 +11379,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11482,7 +11430,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.6-35b-a3b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11533,7 +11481,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen-2.5-72b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11584,7 +11532,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11635,7 +11583,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/inception/mercury-2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11685,7 +11633,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen2.5-vl-72b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11737,7 +11685,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/arcee-ai/trinity-large-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11794,7 +11742,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen-plus",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11851,7 +11799,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen-plus-2025-07-28",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11913,7 +11861,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-coder-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -11965,7 +11913,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-3.1-70b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12016,7 +11964,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thedrummer/unslopnemo-12b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12066,7 +12014,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12117,7 +12065,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12168,7 +12116,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12220,7 +12168,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-next-80b-a3b-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12278,7 +12226,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.6-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12329,7 +12277,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12380,7 +12328,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-01",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12431,7 +12379,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-chat-v3-0324",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12482,7 +12430,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nex-agi/nex-n2-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12532,7 +12480,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/stepfun/step-3.7-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12582,7 +12530,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12633,7 +12581,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12685,7 +12633,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12787,7 +12735,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/codestral-2508",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12839,7 +12787,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.6v",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12899,7 +12847,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-luna",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -12958,7 +12906,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-luna-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13008,7 +12956,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-chat",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13059,7 +13007,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13110,7 +13058,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13163,7 +13111,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.4-nano",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13213,7 +13161,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13264,7 +13212,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-coder",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13316,7 +13264,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13367,7 +13315,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perceptron/perceptron-mk1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13417,7 +13365,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-3-haiku",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13467,7 +13415,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-35b-a3b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13518,7 +13466,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/undi95/remm-slerp-l2-13b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13568,7 +13516,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13619,7 +13567,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13670,7 +13618,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13721,7 +13669,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13772,7 +13720,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13823,7 +13771,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13875,7 +13823,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/kwaipilot/kat-coder-pro-v2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13926,7 +13874,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meituan/longcat-2.0",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -13976,7 +13924,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2-her",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14027,7 +13975,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14078,7 +14026,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m2.7",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14132,7 +14080,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14184,7 +14132,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-27b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14235,7 +14183,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14291,7 +14239,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.7-plus",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14394,7 +14342,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14447,7 +14395,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-flash-lite",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14497,7 +14445,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-flash-lite-image",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14547,7 +14495,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-flash-lite-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14597,7 +14545,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mancer/weaver",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14653,7 +14601,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-plus-02-15",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14704,7 +14652,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14756,7 +14704,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14807,7 +14755,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thedrummer/skyfall-36b-v2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14857,7 +14805,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/microsoft/wizardlm-2-8x22b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14907,7 +14855,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/baidu/ernie-4.5-vl-424b-a47b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -14958,7 +14906,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-235b-a22b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15010,7 +14958,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thinkingmachines/inkling-small",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15061,7 +15009,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta/muse-glimmer-30b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15111,7 +15059,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15161,7 +15109,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15212,7 +15160,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemma-2-27b-it",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15263,7 +15211,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-8b-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15316,7 +15264,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/sao10k/l3.3-euryale-70b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15373,7 +15321,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-plus-20260420",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15424,7 +15372,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15477,7 +15425,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15527,7 +15475,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15584,7 +15532,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-1.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15641,7 +15589,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-2.0-lite",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15692,7 +15640,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15742,7 +15690,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15797,7 +15745,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4.1-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15847,7 +15795,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nousresearch/hermes-3-llama-3.1-70b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15898,7 +15846,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta-llama/llama-3.3-70b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -15949,7 +15897,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-122b-a10b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16006,7 +15954,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.6-plus",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16057,7 +16005,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.7",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16108,7 +16056,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen-2.5-coder-32b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16160,7 +16108,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-235b-a22b-thinking-2507",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16212,7 +16160,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16262,7 +16210,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16313,7 +16261,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16364,7 +16312,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16418,7 +16366,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.7-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16468,7 +16416,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~google/gemini-flash-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16521,7 +16469,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-3.5-turbo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16571,7 +16519,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-large-2512",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16622,7 +16570,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-30b-a3b-thinking-2507",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16674,7 +16622,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-30b-a3b-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16727,7 +16675,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16778,7 +16726,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16830,7 +16778,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16882,7 +16830,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-r1-distill-llama-70b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16934,7 +16882,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-medium-3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -16985,7 +16933,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-medium-3.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17036,7 +16984,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17087,7 +17035,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17138,7 +17086,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-chat-v3.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17189,7 +17137,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17346,7 +17294,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17396,7 +17344,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17446,7 +17394,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17496,7 +17444,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17549,7 +17497,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17599,7 +17547,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-flash-image",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17652,7 +17600,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.5-flash-lite",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17702,7 +17650,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/sao10k/l3.1-euryale-70b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17753,7 +17701,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/amazon/nova-2-lite-v1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17803,7 +17751,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/arcee-ai/virtuoso-large",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17853,7 +17801,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/aion-labs/aion-3.0-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17903,7 +17851,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -17954,7 +17902,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.5-397b-a17b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18005,7 +17953,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/devstral-2512",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18057,7 +18005,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18108,7 +18056,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.5v",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18159,7 +18107,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/morph/morph-v3-fast",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18209,7 +18157,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-r1-0528",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18261,7 +18209,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18312,7 +18260,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/relace/relace-apply-3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18362,7 +18310,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.8-27b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18413,7 +18361,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18465,7 +18413,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/minimax/minimax-m1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18581,7 +18529,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18632,7 +18580,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18683,7 +18631,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18734,7 +18682,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/aion-labs/aion-2.0",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18784,7 +18732,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/aion-labs/aion-rp-llama-3.1-8b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18835,7 +18783,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-4.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18886,7 +18834,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nousresearch/hermes-3-llama-3.1-405b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -18937,7 +18885,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-2-1-turbo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -18988,7 +18936,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perplexity/sonar",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -19038,7 +18986,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19089,7 +19037,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19193,7 +19141,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-audio-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19243,7 +19191,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2-0905",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19294,7 +19242,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19346,7 +19294,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19398,7 +19346,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19451,7 +19399,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3-flash-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19501,7 +19449,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-flash-image",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19551,7 +19499,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-flash-image-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19608,7 +19556,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/bytedance-seed/seed-2.0-code",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19660,7 +19608,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-r1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19711,7 +19659,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/morph/morph-v3-large",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19761,7 +19709,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19812,7 +19760,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19863,7 +19811,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -19914,7 +19862,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -19964,7 +19912,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-3.5-turbo-0613",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -20020,7 +19968,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-build-0.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -20122,7 +20070,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20173,7 +20121,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20237,7 +20185,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-coder-plus",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20289,7 +20237,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-vl-235b-a22b-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20345,7 +20293,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20396,7 +20344,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.6-27b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20450,7 +20398,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20502,7 +20450,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/amazon/nova-pro-v1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20552,7 +20500,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20602,7 +20550,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20652,7 +20600,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20766,7 +20714,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20816,7 +20764,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -20866,7 +20814,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -20916,7 +20864,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -20970,7 +20918,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.6-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -21020,7 +20968,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/nousresearch/hermes-4-405b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21071,7 +21019,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/relace/relace-search",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21121,7 +21069,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21183,7 +21131,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-max",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -21245,7 +21193,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3-max-thinking",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -21297,7 +21245,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21348,7 +21296,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21399,7 +21347,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21450,7 +21398,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21501,7 +21449,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21551,7 +21499,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21607,7 +21555,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-4.20",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21663,7 +21611,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-4.20-multi-agent",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21719,7 +21667,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-4.3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21821,7 +21769,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-3.5-turbo-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21871,7 +21819,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -21922,7 +21870,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -21972,7 +21920,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22025,7 +21973,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.4-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22075,7 +22023,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~openai/gpt-mini-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22125,7 +22073,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22176,7 +22124,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22228,7 +22176,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22279,7 +22227,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/sakana/sakana-namazu",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22332,7 +22280,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/thinkingmachines/inkling",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "budget",
@@ -22386,7 +22334,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5.2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22437,7 +22385,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5-turbo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22488,7 +22436,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5v-turbo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22539,7 +22487,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22590,7 +22538,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22641,7 +22589,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22692,7 +22640,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22746,7 +22694,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o3-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22800,7 +22748,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o3-mini-high",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22854,7 +22802,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o4-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22908,7 +22856,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o4-mini-high",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -22959,7 +22907,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23010,7 +22958,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23061,7 +23009,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/writer/palmyra-x5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23164,7 +23112,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23214,7 +23162,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23267,7 +23215,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-haiku-4.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23318,7 +23266,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~anthropic/claude-haiku-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23368,7 +23316,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta/muse-spark-1.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23418,7 +23366,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/meta/muse-spark-1.2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23468,7 +23416,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23519,7 +23467,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23571,7 +23519,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23622,7 +23570,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23673,7 +23621,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23724,7 +23672,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/z-ai/glm-5.3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23775,7 +23723,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~z-ai/glm-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23932,7 +23880,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.7-max",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -23989,7 +23937,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.6-max-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24040,7 +23988,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5-image-mini",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24091,7 +24039,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24142,7 +24090,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24192,7 +24140,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24243,7 +24191,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24293,7 +24241,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24344,7 +24292,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24395,7 +24343,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24445,7 +24393,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24495,7 +24443,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24545,7 +24493,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24596,7 +24544,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24647,7 +24595,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24698,7 +24646,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24755,7 +24703,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-4.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24811,7 +24759,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/x-ai/grok-4.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24867,7 +24815,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~x-ai/grok-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24917,7 +24865,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-large",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -24968,7 +24916,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-large-2407",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25019,7 +24967,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mistral-medium-3-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25070,7 +25018,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/mistralai/mixtral-8x22b-instruct",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25121,7 +25069,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.8-2.4t-a95b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25172,7 +25120,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/qwen/qwen3.8-max",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25327,7 +25275,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25377,7 +25325,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-3.5-turbo-16k",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25479,7 +25427,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25529,7 +25477,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25583,7 +25531,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.5-flash",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25686,7 +25634,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25737,7 +25685,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25787,7 +25735,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25837,7 +25785,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25887,7 +25835,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25937,7 +25885,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -25987,7 +25935,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26046,7 +25994,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26103,7 +26051,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-pro-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26159,7 +26107,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-2.5-pro-preview-05-06",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26212,7 +26160,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26265,7 +26213,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26315,7 +26263,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.1-codex",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26366,7 +26314,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26417,7 +26365,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26467,7 +26415,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26517,7 +26465,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26571,7 +26519,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26621,7 +26569,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthracite-org/magnum-v4-72b",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26674,7 +26622,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26724,7 +26672,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perplexity/sonar-deep-research",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26774,7 +26722,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perplexity/sonar-reasoning-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26825,7 +26773,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26875,7 +26823,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26926,7 +26874,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/aion-labs/aion-3.0",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -26976,7 +26924,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27079,7 +27027,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27129,7 +27077,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27179,7 +27127,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27229,7 +27177,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27279,7 +27227,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27329,7 +27277,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27380,7 +27328,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27434,7 +27382,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-sonnet-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27484,7 +27432,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~anthropic/claude-sonnet-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27543,7 +27491,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-sol",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27603,7 +27551,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-sol-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27659,7 +27607,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~openai/gpt-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27709,7 +27657,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27760,7 +27708,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27810,7 +27758,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27860,7 +27808,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27910,7 +27858,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -27960,7 +27908,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28010,7 +27958,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cohere/command-a",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28060,7 +28008,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/cohere/command-r-plus-08-2024",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28114,7 +28062,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28164,7 +28112,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o-2024-08-06",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28214,7 +28162,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o-2024-11-20",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28264,7 +28212,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-audio",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28366,7 +28314,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28416,7 +28364,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28466,7 +28414,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28568,7 +28516,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3-pro-image",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28618,7 +28566,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3-pro-image-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28678,7 +28626,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-pro-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28734,7 +28682,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/google/gemini-3.1-pro-preview-customtools",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28790,7 +28738,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~google/gemini-pro-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28849,7 +28797,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-terra",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28908,7 +28856,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.6-terra-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -28958,7 +28906,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29008,7 +28956,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29062,7 +29010,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29112,7 +29060,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.2-chat",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29162,7 +29110,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.2-codex",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29213,7 +29161,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.3-codex",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29264,7 +29212,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/amazon/nova-premier-v1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29314,7 +29262,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~moonshotai/kimi-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29365,7 +29313,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29424,7 +29372,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29526,7 +29474,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29576,7 +29524,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29626,7 +29574,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29676,7 +29624,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29788,7 +29736,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-sonnet-4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29847,7 +29795,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-sonnet-4.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29900,7 +29848,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-sonnet-4.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -29950,7 +29898,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/moonshotai/kimi-k3",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -30002,7 +29950,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perplexity/sonar-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -30052,7 +30000,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/perplexity/sonar-pro-search",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "mid",
@@ -30102,7 +30050,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30152,7 +30100,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30203,7 +30151,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4o-2024-05-13",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30253,7 +30201,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30303,7 +30251,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30353,7 +30301,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30403,7 +30351,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30517,7 +30465,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.4-image-2",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30672,7 +30620,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30722,7 +30670,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30772,7 +30720,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30822,7 +30770,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30872,7 +30820,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30922,7 +30870,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -30972,7 +30920,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31025,7 +30973,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31078,7 +31026,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.6",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31131,7 +31079,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.7",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31184,7 +31132,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.8",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31237,7 +31185,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31287,7 +31235,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~anthropic/claude-opus-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31337,7 +31285,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5-image",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31387,7 +31335,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31437,7 +31385,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31545,7 +31493,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/sakana/fugu-ultra",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31604,7 +31552,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31654,7 +31602,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-chat-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31704,7 +31652,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31754,7 +31702,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31807,7 +31755,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4-turbo",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31857,7 +31805,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4-turbo-preview",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -31959,7 +31907,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32009,7 +31957,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32059,7 +32007,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32112,7 +32060,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-fable-5",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32162,7 +32110,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/~anthropic/claude-fable-latest",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32212,7 +32160,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.8-fast",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32262,7 +32210,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-5-fast",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32312,7 +32260,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32362,7 +32310,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32416,7 +32364,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32466,7 +32414,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32516,7 +32464,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32618,7 +32566,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32671,7 +32619,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.1",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32721,7 +32669,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32772,7 +32720,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32826,7 +32774,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o3-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32877,7 +32825,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32927,7 +32875,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-4",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -32977,7 +32925,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33030,7 +32978,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33080,7 +33028,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33133,7 +33081,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.2-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33183,7 +33131,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/anthropic/claude-opus-4.7-fast",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33233,7 +33181,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33283,7 +33231,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33342,7 +33290,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.4-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33401,7 +33349,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/gpt-5.5-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33451,7 +33399,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33502,7 +33450,7 @@
         "method": "direct-api",
         "adapter": "litellm",
         "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
-        "collected_at": "2026-08-26T09:32:18.926Z",
+        "collected_at": "2026-08-26T09:34:43.816Z",
         "confidence": "api"
       },
       "tier": "flagship",
@@ -33556,7 +33504,7 @@
         "method": "direct-api",
         "adapter": "openrouter",
         "url": "https://openrouter.ai/openai/o1-pro",
-        "collected_at": "2026-08-26T09:32:18.876Z",
+        "collected_at": "2026-08-26T09:34:43.763Z",
         "confidence": "api"
       },
       "tier": "flagship",
