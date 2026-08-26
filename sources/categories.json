@@ -1,0 +1,156 @@
+{
+  "_comment": "Two layers. (1) FUNCTIONAL categories are matched by name (ordered; first hit = primary): free, embedding, vision, reasoning, coding. (2) If no functional rule matches, the PRIMARY category is a PRICE TIER from `tiers` (USD per 1M, list price): flagship / mid / budget. `open-weight` is a tag only. Explicit per-model overrides in model-overrides.json win over everything.",
+  "blended_ratio": {
+    "input": 3,
+    "output": 1,
+    "_comment": "blended $/1M = (3*input + 1*output)/4 — a typical 3:1 prompt:completion mix"
+  },
+  "categories": [
+    {
+      "id": "free",
+      "label": "Free / $0",
+      "match": [
+        "(^|[:/-])free($|[:/-])"
+      ],
+      "price_zero": true
+    },
+    {
+      "id": "embedding",
+      "label": "Embedding / rerank",
+      "match": [
+        "embed",
+        "text-embedding",
+        "bge-",
+        "(^|/)e5-",
+        "rerank",
+        "voyage",
+        "colbert"
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Vision / multimodal",
+      "match": [
+        "vision",
+        "-vl(-|$)",
+        "omni",
+        "(^|-)image($|-)",
+        "multimodal",
+        "-vl-",
+        "-vision"
+      ]
+    },
+    {
+      "id": "reasoning",
+      "label": "Reasoning",
+      "match": [
+        "reason",
+        "(^|/)o[1-9](-|$)",
+        "-r[0-9](-|$)",
+        "thinking",
+        "deepthink",
+        "-think",
+        "qwq",
+        "(^|-)r1(-|$)"
+      ]
+    },
+    {
+      "id": "coding",
+      "label": "Coding",
+      "match": [
+        "(^|-)code",
+        "coder",
+        "codex",
+        "devstral",
+        "codestral",
+        "starcoder",
+        "seed-2.0-code",
+        "kimi-k[0-9].*code"
+      ]
+    },
+    {
+      "id": "flagship",
+      "label": "Flagship (≥ $4 in or ≥ $20 out)",
+      "match": []
+    },
+    {
+      "id": "mid",
+      "label": "Mid-tier ($1–4 in)",
+      "match": []
+    },
+    {
+      "id": "budget",
+      "label": "Budget (< $1 in)",
+      "match": []
+    },
+    {
+      "id": "open-weight",
+      "label": "Open-weight",
+      "match": [
+        "llama",
+        "qwen",
+        "deepseek",
+        "mistral",
+        "mixtral",
+        "gemma",
+        "glm",
+        "kimi",
+        "minimax",
+        "phi-",
+        "(^|/)yi-",
+        "hunyuan",
+        "internlm",
+        "granite",
+        "nemotron",
+        "command-r",
+        "olmo",
+        "seed",
+        "hermes",
+        "solar"
+      ]
+    }
+  ],
+  "primary_exclude": [
+    "open-weight",
+    "flagship",
+    "mid",
+    "budget"
+  ],
+  "vendor_aliases": {
+    "x-ai": "xai",
+    "meta-llama": "meta",
+    "mistralai": "mistral",
+    "moonshotai": "moonshot",
+    "z-ai": "zai",
+    "alibaba": "alibaba-modelstudio",
+    "qwen": "alibaba-modelstudio",
+    "bytedance": "volcengine-ark",
+    "bytedance-seed": "volcengine-ark",
+    "baidu": "baidu-qianfan",
+    "tencent": "tencent-hunyuan",
+    "zhipu": "zai",
+    "zhipuai": "zai",
+    "kimi": "moonshot",
+    "gemini": "google",
+    "vertex_ai": "google",
+    "vertex_ai-language-models": "google",
+    "anthropic-beta": "anthropic"
+  },
+  "tiers": [
+    {
+      "id": "flagship",
+      "min_input_usd": 4,
+      "min_output_usd": 20
+    },
+    {
+      "id": "mid",
+      "min_input_usd": 1,
+      "min_output_usd": 6
+    },
+    {
+      "id": "budget",
+      "min_input_usd": 0,
+      "min_output_usd": 0
+    }
+  ]
+}

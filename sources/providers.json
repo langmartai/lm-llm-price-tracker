@@ -1,0 +1,485 @@
+{
+  "$schema": "../docs/SCHEMA.md#providers",
+  "_comment": "Registry of price SOURCES. automation.method: direct-api (JSON endpoint, runs in CI) | public-page (server-rendered HTML, runs in CI) | lm-assist-browser (Claude-in-Chrome on an lm-assist node; needed for JS-rendered or login-only pages) | manual (data/manual/*.json). Add entries with: node scripts/add-provider.js",
+  "providers": [
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "kind": "aggregator",
+      "region": "global",
+      "site_url": "https://openrouter.ai",
+      "pricing_url": "https://openrouter.ai/models",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://openrouter.ai/api/v1",
+      "automation": {
+        "method": "direct-api",
+        "adapter": "openrouter",
+        "endpoint": "https://openrouter.ai/api/v1/models",
+        "auth": "none",
+        "notes": "pricing.prompt/completion are USD per token (strings). pricing.overrides carries time-based off-peak windows (utc_days/utc_start/utc_end) and long-context surcharges (min_prompt_tokens)."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM price registry",
+      "kind": "aggregator",
+      "region": "global",
+      "site_url": "https://github.com/BerriAI/litellm",
+      "pricing_url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": null,
+      "automation": {
+        "method": "direct-api",
+        "adapter": "litellm",
+        "endpoint": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "auth": "none",
+        "notes": "Community-maintained; input_cost_per_token / output_cost_per_token. Used as a cross-check for DIRECT vendor list prices (litellm_provider field)."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "kind": "vendor",
+      "region": "global",
+      "site_url": "https://openai.com",
+      "pricing_url": "https://openai.com/api/pricing/",
+      "docs_url": "https://platform.openai.com/docs/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.openai.com/v1",
+      "automation": {
+        "method": "lm-assist-browser",
+        "adapter": "lm-assist-browser",
+        "endpoint": "https://platform.openai.com/docs/pricing",
+        "auth": "none",
+        "notes": "JS-rendered pricing tables; scrape via lm-assist browser task. Batch API = 50% off; cached input up to 90% off."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "GPT-5.6 Luna 80% price cut / Terra 20% cut",
+          "type": "permanent-cut",
+          "detail": "On 2026-07-30 OpenAI cut GPT-5.6 Luna to $0.20/$1.20 per 1M (input/output) and Terra by 20%.",
+          "valid_until": null,
+          "source_url": "https://www.cloudzero.com/blog/llm-api-pricing-comparison/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "vendor",
+      "region": "global",
+      "site_url": "https://www.anthropic.com",
+      "pricing_url": "https://www.anthropic.com/pricing",
+      "docs_url": "https://docs.claude.com/en/docs/about-claude/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.anthropic.com/v1",
+      "automation": {
+        "method": "lm-assist-browser",
+        "adapter": "lm-assist-browser",
+        "endpoint": "https://docs.claude.com/en/docs/about-claude/pricing",
+        "auth": "none",
+        "notes": "OpenAI SDK compatibility layer available. Batch 50% off; prompt cache read 0.1x, 5m cache write 1.25x."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "Claude Sonnet 5 introductory price made permanent",
+          "type": "permanent-cut",
+          "detail": "Launched at $2/$10 per 1M as introductory pricing; Anthropic made the rate permanent on 2026-08-11 (the scheduled Sept 1 increase to $3/$15 was cancelled).",
+          "valid_until": null,
+          "source_url": "https://www.cloudzero.com/blog/llm-api-pricing-comparison/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google Gemini API",
+      "kind": "vendor",
+      "region": "global",
+      "site_url": "https://ai.google.dev",
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "automation": {
+        "method": "public-page",
+        "adapter": "public-page",
+        "endpoint": "https://ai.google.dev/gemini-api/docs/pricing",
+        "auth": "none",
+        "notes": "Free tier with rate limits. Long-context step-up above 200K tokens on Pro models. Batch 50% off."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "Gemini API free tier",
+          "type": "free-tier",
+          "detail": "Rate-limited free tier for prototyping on Flash/Flash-Lite models.",
+          "valid_until": null,
+          "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://platform.deepseek.com",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.deepseek.com/v1",
+      "automation": {
+        "method": "public-page",
+        "adapter": "public-page",
+        "endpoint": "https://api-docs.deepseek.com/quick_start/pricing",
+        "auth": "none",
+        "notes": "Peak / off-peak billing since 2026-08-16 16:00 UTC (off-peak window 16:30-00:30 UTC). Cache-hit input is deeply discounted. OpenRouter mirrors the off-peak windows in pricing.overrides."
+      },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "Off-peak discount window",
+          "type": "off-peak",
+          "detail": "Reduced rates 16:30-00:30 UTC daily; V4-Pro ~$0.66/$1.98 off-peak vs $1.32/$3.96 peak per 1M since 2026-08-16.",
+          "valid_until": null,
+          "source_url": "https://codersera.com/blog/deepseek-v4-pro-permanent-price-cut-may-2026/",
+          "confidence": "web-research"
+        },
+        {
+          "title": "New-account free token grant",
+          "type": "free-tier",
+          "detail": "Reported 5M free tokens for new API accounts (verify in console).",
+          "valid_until": null,
+          "source_url": "https://www.nxcode.io/resources/news/deepseek-api-pricing-complete-guide-2026",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI (Grok)",
+      "kind": "vendor",
+      "region": "global",
+      "site_url": "https://x.ai",
+      "pricing_url": "https://docs.x.ai/docs/models",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.x.ai/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://docs.x.ai/docs/models", "auth": "none", "notes": "Long-context surcharge above 200K tokens." },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "kind": "vendor",
+      "region": "eu",
+      "site_url": "https://mistral.ai",
+      "pricing_url": "https://mistral.ai/pricing#api-pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.mistral.ai/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://mistral.ai/pricing#api-pricing", "auth": "none", "notes": "" },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "kind": "inference-host",
+      "region": "global",
+      "site_url": "https://groq.com",
+      "pricing_url": "https://groq.com/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.groq.com/openai/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://groq.com/pricing", "auth": "none", "notes": "Open-weight models on LPU hardware; free dev tier." },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "together",
+      "name": "Together AI",
+      "kind": "inference-host",
+      "region": "global",
+      "site_url": "https://www.together.ai",
+      "pricing_url": "https://www.together.ai/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.together.xyz/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://www.together.ai/pricing", "auth": "none", "notes": "Still serves DeepSeek V4 Flash at the old flat $0.14/$0.28 (third-party host)." },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "kind": "inference-host",
+      "region": "global",
+      "site_url": "https://fireworks.ai",
+      "pricing_url": "https://fireworks.ai/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.fireworks.ai/inference/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://fireworks.ai/pricing", "auth": "none", "notes": "" },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras",
+      "kind": "inference-host",
+      "region": "global",
+      "site_url": "https://www.cerebras.ai",
+      "pricing_url": "https://www.cerebras.ai/pricing",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://api.cerebras.ai/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://www.cerebras.ai/pricing", "auth": "none", "notes": "" },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "alibaba-modelstudio",
+      "name": "Alibaba Cloud Model Studio (Bailian / Qwen)",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://www.alibabacloud.com/en/product/modelstudio",
+      "pricing_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "console_url": "https://bailian.console.aliyun.com",
+      "currency": "USD",
+      "native_currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "base_url_cn": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "automation": {
+        "method": "lm-assist-browser",
+        "adapter": "lm-assist-browser",
+        "endpoint": "https://bailian.console.aliyun.com",
+        "auth": "login",
+        "notes": "Public intl pricing page exists; CN-region promotional / limited-time prices and Coding/Token plans are shown inside the logged-in console. Batch 50% off."
+      },
+      "login_required_for_pricing": true,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "Bailian Coding Plan / Token Plan",
+          "type": "subscription",
+          "detail": "Coding Plan from ¥200/mo; Token Plan Team Edition from ¥198/mo (multi-seat). New purchases currently Pro tier only.",
+          "price": 200, "currency": "CNY", "period": "month",
+          "valid_until": null,
+          "source_url": "https://codepick.dev/en/guides/china-coding-api-roundup-2026/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-ark",
+      "name": "Volcengine Ark (Doubao)",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://www.volcengine.com/product/ark",
+      "pricing_url": "https://www.volcengine.com/pricing?product=ark",
+      "console_url": "https://console.volcengine.com/ark",
+      "currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "automation": {
+        "method": "lm-assist-browser",
+        "adapter": "lm-assist-browser",
+        "endpoint": "https://console.volcengine.com/ark",
+        "auth": "login",
+        "notes": "Console shows per-model promotional prices, first-month flash sales and Coding/Agent Plan offers after login."
+      },
+      "login_required_for_pricing": true,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "Ark Coding Plan Lite first month ¥9.9",
+          "type": "limited-time",
+          "detail": "Coding Plan Lite ¥40/mo, first month ¥9.9 (daily flash sale); Agent Plan = multimodal + Harness bundle.",
+          "price": 40, "promo_price": 9.9, "currency": "CNY", "period": "month",
+          "valid_until": null,
+          "source_url": "https://codepick.dev/en/guides/china-coding-api-roundup-2026/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot AI (Kimi)",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://platform.moonshot.ai",
+      "pricing_url": "https://platform.moonshot.ai/docs/pricing/chat",
+      "console_url": "https://platform.moonshot.cn/console",
+      "currency": "USD",
+      "native_currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://api.moonshot.ai/v1",
+      "base_url_cn": "https://api.moonshot.cn/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://platform.moonshot.ai/docs/pricing/chat", "auth": "none", "notes": "Rate limits scale with spend (console-only)." },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "zai",
+      "name": "Z.ai / Zhipu (GLM)",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://z.ai",
+      "pricing_url": "https://docs.z.ai/guides/overview/pricing",
+      "console_url": "https://open.bigmodel.cn/pricing",
+      "currency": "USD",
+      "native_currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "base_url_cn": "https://open.bigmodel.cn/api/paas/v4",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://open.bigmodel.cn/pricing", "auth": "login", "notes": "CN pricing page shows Coding Plan annual discounts; some promo tiers are account-scoped." },
+      "login_required_for_pricing": true,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "GLM Coding Plan Pro annual 30% off",
+          "type": "limited-time",
+          "detail": "Coding Plan Pro ¥149/mo, ¥104/mo on annual billing; plans from ¥49/mo.",
+          "price": 149, "promo_price": 104, "currency": "CNY", "period": "month",
+          "valid_until": null,
+          "source_url": "https://codepick.dev/en/guides/china-coding-api-roundup-2026/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://www.minimax.io",
+      "pricing_url": "https://platform.minimax.io/docs/guides/pricing",
+      "console_url": "https://platform.minimaxi.com",
+      "currency": "USD",
+      "native_currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://api.minimax.io/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://platform.minimax.io/docs/guides/pricing", "auth": "none", "notes": "Priority tier for latency-sensitive traffic." },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": [
+        {
+          "title": "MiniMax Token Plan from ¥29/mo",
+          "type": "subscription",
+          "detail": "Full-modal bundle (text + audio + video) from ¥29/mo.",
+          "price": 29, "currency": "CNY", "period": "month",
+          "valid_until": null,
+          "source_url": "https://codepick.dev/en/guides/china-coding-api-roundup-2026/",
+          "confidence": "web-research"
+        }
+      ]
+    },
+    {
+      "id": "siliconflow",
+      "name": "SiliconFlow",
+      "kind": "inference-host",
+      "region": "cn",
+      "site_url": "https://siliconflow.cn",
+      "pricing_url": "https://cloud.siliconflow.cn/models",
+      "console_url": "https://cloud.siliconflow.cn",
+      "currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://api.siliconflow.cn/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://cloud.siliconflow.cn/models", "auth": "login", "notes": "Model marketplace prices (incl. free small models) are visible after login." },
+      "login_required_for_pricing": true,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "baidu-qianfan",
+      "name": "Baidu Qianfan (ERNIE)",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://cloud.baidu.com/product/qianfan",
+      "pricing_url": "https://cloud.baidu.com/doc/qianfan-docs/s/wm7pf0hja",
+      "console_url": "https://console.bce.baidu.com/qianfan",
+      "currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://qianfan.baidubce.com/v2",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://console.bce.baidu.com/qianfan", "auth": "login", "notes": "Free-quota and limited-time discounts are console-scoped." },
+      "login_required_for_pricing": true,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "tencent-hunyuan",
+      "name": "Tencent Hunyuan",
+      "kind": "vendor",
+      "region": "cn",
+      "site_url": "https://cloud.tencent.com/product/hunyuan",
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731",
+      "console_url": "https://console.cloud.tencent.com/hunyuan",
+      "currency": "CNY",
+      "openai_compatible": true,
+      "base_url": "https://api.hunyuan.cloud.tencent.com/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://cloud.tencent.com/document/product/1729/97731", "auth": "none", "notes": "" },
+      "login_required_for_pricing": false,
+      "enabled": true,
+      "promotions": []
+    },
+    {
+      "id": "aws-bedrock",
+      "name": "Amazon Bedrock",
+      "kind": "cloud",
+      "region": "global",
+      "site_url": "https://aws.amazon.com/bedrock/",
+      "pricing_url": "https://aws.amazon.com/bedrock/pricing/",
+      "currency": "USD",
+      "openai_compatible": false,
+      "base_url": null,
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://aws.amazon.com/bedrock/pricing/", "auth": "none", "notes": "Per-region pricing; account-level quotas." },
+      "login_required_for_pricing": false,
+      "enabled": false,
+      "promotions": []
+    },
+    {
+      "id": "azure-openai",
+      "name": "Azure OpenAI",
+      "kind": "cloud",
+      "region": "global",
+      "site_url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+      "pricing_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+      "currency": "USD",
+      "openai_compatible": true,
+      "base_url": "https://{resource}.openai.azure.com/openai/v1",
+      "automation": { "method": "lm-assist-browser", "adapter": "lm-assist-browser", "endpoint": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/", "auth": "none", "notes": "Per-region; PTU commitments." },
+      "login_required_for_pricing": false,
+      "enabled": false,
+      "promotions": []
+    }
+  ]
+}

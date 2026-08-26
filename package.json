@@ -1,0 +1,18 @@
+{
+  "name": "lm-llm-price-tracker",
+  "version": "0.1.0",
+  "description": "Cross-vendor LLM API price + promotion tracker. Direct-API and lm-assist browser automation collectors -> normalized JSON -> generated Markdown.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "collect": "node scripts/collect.js",
+    "collect:api": "node scripts/collect.js --method direct-api",
+    "collect:browser": "node scripts/collect.js --method lm-assist-browser",
+    "generate": "node scripts/generate-md.js",
+    "add-provider": "node scripts/add-provider.js",
+    "check": "node scripts/collect.js --dry-run --method direct-api"
+  },
+  "repository": { "type": "git", "url": "https://github.com/langmartai/lm-llm-price-tracker" },
+  "keywords": ["llm", "pricing", "openai-compatible", "deepseek", "openrouter", "lm-assist", "price-tracker", "promotion"]
+}
