@@ -1,6 +1,6 @@
 # LLM API price radar — cross-vendor list & promotion prices
 
-> Generated `2026-08-26T10:09:01.495Z` · **708 models** across **17 price sources** · 54 models with an active promo/off-peak price · unit: **USD per 1M tokens** (CNY→USD @ 0.14) · blended = (3×input + 1×output)/4
+> Generated `2026-08-27T14:18:42.491Z` · **709 models** across **17 price sources** · 53 models with an active promo/off-peak price · unit: **USD per 1M tokens** (CNY→USD @ 0.14) · blended = (3×input + 1×output)/4
 > Regenerate: `node scripts/collect.js` · data: [`data/prices.json`](data/prices.json) · sources: [`sources/providers.json`](sources/providers.json)
 
 ## Cheapest right now, by category
@@ -28,7 +28,7 @@
 
 ## Active promotions & off-peak prices
 
-### Per-model (31)
+### Per-model (30)
 
 | Provider | Model | List in/out | Promo in/out | Discount | Type / window | Ends | Source |
 |---|---|---:|---:|---:|---|---|---|
@@ -43,7 +43,6 @@
 | mistral | `codestral-latest` | $0.300 / $0.900 | **$0.150 / $0.450** | 50% | batch −50% | open | [manual](https://mistral.ai/pricing#api-pricing) |
 | deepseek | `deepseek-v4-flash` | $0.440 / $1.32 | **$0.220 / $0.660** | 50% | undefined −50% | open | [manual](https://api-docs.deepseek.com/quick_start/pricing) |
 | deepseek | `deepseek-v4-flash-vision-exp` | $0.440 / $1.32 | **$0.220 / $0.660** | 50% | undefined −50% | open | [manual](https://api-docs.deepseek.com/quick_start/pricing) |
-| openrouter | `deepseek-v4-flash-vision-exp` | $0.440 / $1.32 | **$0.220 / $0.660** | 50% | off-peak −50% (sat/sun all-day; mon/tue/wed/thu/fri 00:00-01:00; mon/tue/wed/thu/fri 04:00-06:00; mon/tue/wed/thu/fri 10:00-00:00 UTC) | open | [direct-api](https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp) |
 | zai | `glm-4-plus` | $0.700 / $0.700 | **$0.350 / $0.350** | 50% | batch −50% | open | [manual](https://open.bigmodel.cn/pricing) |
 | mistral | `mistral-large-latest` | $0.500 / $1.50 | **$0.250 / $0.750** | 50% | batch −50% | open | [manual](https://mistral.ai/pricing#api-pricing) |
 | minimax | `MiniMax-M3` | $0.600 / $2.40 | **$0.300 / $1.20** | 50% | permanent-cut −50% | open | [manual](https://platform.minimax.io/docs/guides/pricing-paygo) |
@@ -129,7 +128,7 @@ Models offered by 2+ price sources, sorted by price spread between the cheapest 
 
 | Vendor | Model | Cheapest seller | Spread | Sellers (blended $/1M, in/out) |
 |---|---|---|---:|---|
-| deepseek | `deepseek-v4-flash` | openrouter | 700% | openrouter **$0.041** ($0.030/$0.075) · deepseek **$0.330** ($0.220/$0.660, promo) |
+| deepseek | `deepseek-v4-flash` | openrouter | 595% | openrouter **$0.048** ($0.030/$0.100) · deepseek **$0.330** ($0.220/$0.660, promo) |
 | zai | `glm-4-5-air` | zai | 176% | zai **$0.154** ($0.112/$0.280) · openrouter **$0.310** ($0.130/$0.850) · litellm **$0.425** ($0.200/$1.10) |
 | openai | `gpt-4` | litellm | 150% | litellm **$15.00** ($10.00/$30.00) · openrouter **$37.50** ($30.00/$60.00) |
 | zai | `glm-4-7` | zai | 104% | zai **$0.490** ($0.280/$1.12) · openrouter **$0.738** ($0.400/$1.75) · litellm **$1.00** ($0.600/$2.20) |
@@ -152,13 +151,13 @@ Models offered by 2+ price sources, sorted by price spread between the cheapest 
 | alibaba-modelstudio | `qwen-plus` | openrouter | 54% | openrouter **$0.390** ($0.260/$0.780) · litellm **$0.600** ($0.400/$1.20) |
 | zai | `glm-5-turbo` | zai | 47% | zai **$1.29** ($0.700/$3.08) · openrouter **$1.90** ($1.20/$4.00) |
 | deepseek | `deepseek` | litellm | 43% | litellm **$0.315** ($0.280/$0.420) · openrouter **$0.450** ($0.257/$1.03) |
-| moonshot | `kimi-k2-7-code` | moonshot | 32% | moonshot **$1.03** ($0.570/$2.40, promo) · openrouter **$1.35** ($0.670/$3.40) |
+| zai | `glm-4-6` | openrouter | 32% | openrouter **$0.760** ($0.430/$1.75) · litellm **$1.00** ($0.600/$2.20) |
 | zai | `glm-5-1` | zai | 32% | zai **$1.47** ($0.840/$3.36) · openrouter **$1.94** ($1.26/$3.96) |
 | google | `gemini-pro` | litellm | 31% | litellm **$3.44** ($1.25/$10.00) · openrouter **$4.50** ($2.00/$12.00) |
+| moonshot | `kimi-k2-7-code` | moonshot | 31% | moonshot **$1.03** ($0.570/$2.40, promo) · openrouter **$1.34** ($0.660/$3.40) |
 | alibaba-modelstudio | `qwen3-next-80b-a3b` | openrouter | 18% | openrouter **$0.350** ($0.100/$1.10) · litellm **$0.412** ($0.150/$1.20) |
 | minimax | `minimax-m2` | openrouter | 18% | openrouter **$0.446** ($0.255/$1.02) · litellm **$0.525** ($0.300/$1.20) · minimax **$0.525** ($0.300/$1.20) |
 | zai | `glm-5-3` | zai | 18% | zai **$1.82** ($1.12/$3.92) · openrouter **$2.15** ($1.40/$4.40) |
-| zai | `glm-4-6` | openrouter | 14% | openrouter **$0.875** ($0.500/$2.00) · litellm **$1.00** ($0.600/$2.20) |
 | google | `gemini-flash` | openrouter | 13% | openrouter **$0.750** ($0.375/$1.88) · litellm **$0.850** ($0.300/$2.50) |
 | alibaba-modelstudio | `qwen3-vl-235b-a22b` | openrouter | 11% | openrouter **$0.632** ($0.210/$1.90) · litellm **$0.700** ($0.400/$1.60) |
 | minimax | `minimax-m2-5` | openrouter | 11% | openrouter **$0.472** ($0.270/$1.08) · litellm **$0.525** ($0.300/$1.20) · minimax **$0.525** ($0.300/$1.20) |
@@ -181,7 +180,7 @@ Models offered by 2+ price sources, sorted by price spread between the cheapest 
 | anthropic | `claude-opus-4-7` | litellm | 0% | litellm **$10.00** ($5.00/$25.00) · openrouter **$10.00** ($5.00/$25.00) |
 | anthropic | `claude-fable-5` | anthropic | 0% | anthropic **$20.00** ($10.00/$50.00) · litellm **$20.00** ($10.00/$50.00) · openrouter **$20.00** ($10.00/$50.00) |
 | anthropic | `claude-opus-4-1` | anthropic | 0% | anthropic **$30.00** ($15.00/$75.00) · openrouter **$30.00** ($15.00/$75.00) |
-| deepseek | `deepseek-v4-flash-vision` | deepseek | 0% | deepseek **$0.330** ($0.220/$0.660, promo) · openrouter **$0.330** ($0.220/$0.660, promo) |
+| deepseek | `deepseek-v4-flash-vision` | deepseek | 0% | deepseek **$0.330** ($0.220/$0.660, promo) · openrouter **$0.330** ($0.220/$0.660) |
 | google | `gemini-2-5-flash-lite` | google | 0% | google **$0.175** ($0.100/$0.400) · litellm **$0.175** ($0.100/$0.400) · openrouter **$0.175** ($0.100/$0.400) |
 | google | `gemini-3-1-flash-lite` | google | 0% | google **$0.563** ($0.250/$1.50) · litellm **$0.563** ($0.250/$1.50) · openrouter **$0.563** ($0.250/$1.50) |
 | google | `gemini-2-5-flash` | google | 0% | google **$0.850** ($0.300/$2.50) · litellm **$0.850** ($0.300/$2.50) · openrouter **$0.850** ($0.300/$2.50) |
@@ -195,12 +194,12 @@ Models offered by 2+ price sources, sorted by price spread between the cheapest 
 
 | Provider | Kind | Region | Site | Pricing page | OpenAI-compatible base URL | Automation | Login needed | Models | Last collected | Status |
 |---|---|---|---|---|---|---|---|---:|---|---|
-| **OpenRouter** (`openrouter`) | aggregator | global | [openrouter.ai](https://openrouter.ai) | [pricing](https://openrouter.ai/models) | `https://openrouter.ai/api/v1` | `direct-api` | no | 351 | 2026-08-26 10:09 | ok |
-| **LiteLLM price registry** (`litellm`) | aggregator | global | [github.com](https://github.com/BerriAI/litellm) | [pricing](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) | — | `direct-api` | no | 192 | 2026-08-26 10:09 | ok |
+| **OpenRouter** (`openrouter`) | aggregator | global | [openrouter.ai](https://openrouter.ai) | [pricing](https://openrouter.ai/models) | `https://openrouter.ai/api/v1` | `direct-api` | no | 352 | 2026-08-27 14:18 | ok |
+| **LiteLLM price registry** (`litellm`) | aggregator | global | [github.com](https://github.com/BerriAI/litellm) | [pricing](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) | — | `direct-api` | no | 192 | 2026-08-27 14:18 | ok |
 | **OpenAI** (`openai`) | vendor | global | [openai.com](https://openai.com) | [pricing](https://openai.com/api/pricing/) | `https://api.openai.com/v1` | `lm-assist-browser` | no | 4 | — | not run |
 | **Anthropic** (`anthropic`) | vendor | global | [www.anthropic.com](https://www.anthropic.com) | [pricing](https://www.anthropic.com/pricing) | `https://api.anthropic.com/v1` | `lm-assist-browser` | no | 7 | — | not run |
-| **Google Gemini API** (`google`) | vendor | global | [ai.google.dev](https://ai.google.dev) | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | `https://generativelanguage.googleapis.com/v1beta/openai/` | `public-page` | no | 8 | — | not run |
-| **DeepSeek** (`deepseek`) | vendor | cn | [platform.deepseek.com](https://platform.deepseek.com) | [pricing](https://api-docs.deepseek.com/quick_start/pricing) | `https://api.deepseek.com/v1` | `public-page` | no | 3 | — | not run |
+| **Google Gemini API** (`google`) | vendor | global | [ai.google.dev](https://ai.google.dev) | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | `https://generativelanguage.googleapis.com/v1beta/openai/` | `public-page` | no | 8 | 2026-08-27 14:18 | ok |
+| **DeepSeek** (`deepseek`) | vendor | cn | [platform.deepseek.com](https://platform.deepseek.com) | [pricing](https://api-docs.deepseek.com/quick_start/pricing) | `https://api.deepseek.com/v1` | `public-page` | no | 3 | 2026-08-27 14:18 | ok |
 | **xAI (Grok)** (`xai`) | vendor | global | [x.ai](https://x.ai) | [pricing](https://docs.x.ai/docs/models) | `https://api.x.ai/v1` | `lm-assist-browser` | no | 4 | — | not run |
 | **Mistral AI** (`mistral`) | vendor | eu | [mistral.ai](https://mistral.ai) | [pricing](https://mistral.ai/pricing#api-pricing) | `https://api.mistral.ai/v1` | `lm-assist-browser` | no | 11 | — | not run |
 | **Groq** (`groq`) | inference-host | global | [groq.com](https://groq.com) | [pricing](https://groq.com/pricing) | `https://api.groq.com/openai/v1` | `lm-assist-browser` | no | 4 | — | not run |
@@ -354,7 +353,7 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | zai | zai | `glm-5.1-in-32plus` (CNY 8/28) | — | $1.12 | $3.92 | $0.280 | **$1.82** | limited-time | yes | [manual](https://open.bigmodel.cn/pricing) |
 | zai | zai | `glm-5.2` (CNY 8/28) | 1M | $1.12 | $3.92 | $0.280 | **$1.82** | limited-time | yes | [manual](https://open.bigmodel.cn/pricing) |
 | zai | zai | `glm-5.3` (CNY 8/28) | 1M | $1.12 | $3.92 | $0.280 | **$1.82** | limited-time | yes | [manual](https://open.bigmodel.cn/pricing) |
-| openrouter | zai | `glm-5.2` | 1.05M | $1.19 | $3.74 | $0.221 | **$1.83** | batch $1.40/$4.40 | yes | [direct-api](https://openrouter.ai/z-ai/glm-5.2) |
+| openrouter | zai | `glm-5.2` | 1.05M | $1.19 | $3.74 | $0.221 | **$1.83** |  | yes | [direct-api](https://openrouter.ai/z-ai/glm-5.2) |
 | together | together | `qwen3.7-max` | — | $1.25 | $3.75 | $0.130 | **$1.88** |  | yes | [manual](https://www.together.ai/pricing) |
 | openrouter | zai | `glm-5-turbo` | 203K | $1.20 | $4.00 | $0.240 | **$1.90** |  | yes | [direct-api](https://openrouter.ai/z-ai/glm-5-turbo) |
 | … | | 131 more | | | | | | | | |
@@ -385,7 +384,7 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | openrouter | volcengine-ark | `seed-2.0-code` | 262K | $0.500 | $3.00 | — | **$1.13** |  | yes | [direct-api](https://openrouter.ai/bytedance-seed/seed-2.0-code) |
 | openrouter | kwaipilot | `kat-coder-pro-v2.5` | 256K | $0.740 | $2.96 | $0.150 | **$1.29** |  | yes | [direct-api](https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5) |
 | openrouter | alibaba-modelstudio | `qwen3-coder-plus` | 1M | $0.650 | $3.25 | $0.130 | **$1.30** |  | yes | [direct-api](https://openrouter.ai/qwen/qwen3-coder-plus) |
-| openrouter | moonshot | `kimi-k2.7-code` | 262K | $0.670 | $3.40 | $0.190 | **$1.35** | batch $0.950/$4.00 | yes | [direct-api](https://openrouter.ai/moonshotai/kimi-k2.7-code) |
+| openrouter | moonshot | `kimi-k2.7-code` | 262K | $0.660 | $3.40 | $0.180 | **$1.34** | batch $0.950/$4.00 | yes | [direct-api](https://openrouter.ai/moonshotai/kimi-k2.7-code) |
 | fireworks | fireworks | `kimi-k2.7-code` | — | $0.950 | $4.00 | $0.190 | **$1.71** |  | yes | [manual](https://docs.fireworks.ai/serverless/pricing) |
 | litellm | alibaba-modelstudio | `kimi-k2.7-code` | 229K | $0.950 | $4.00 | $0.190 | **$1.71** |  | yes | [direct-api](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) |
 | together | together | `kimi-k2.7-code` | — | $0.950 | $4.00 | $0.190 | **$1.71** |  | yes | [manual](https://www.together.ai/pricing) |
@@ -398,7 +397,7 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | openrouter | openai | `gpt-5.2-codex` | 400K | $1.75 | $14.00 | $0.175 | **$4.81** |  | yes | [direct-api](https://openrouter.ai/openai/gpt-5.2-codex) |
 | openrouter | openai | `gpt-5.3-codex` | 400K | $1.75 | $14.00 | $0.175 | **$4.81** |  | yes | [direct-api](https://openrouter.ai/openai/gpt-5.3-codex) |
 
-### Budget (< $1 in) (329)
+### Budget (< $1 in) (331)
 
 | Provider | Vendor | Model | Ctx | Input | Output | Cache read | Blended | Promo | Compat | Source |
 |---|---|---|---:|---:|---:|---:|---:|---|---|---|
@@ -408,9 +407,9 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | openrouter | inclusionai | `ling-3.0-flash` | 262K | $0.021 | $0.063 | $0.0042 | **$0.032** |  | yes | [direct-api](https://openrouter.ai/inclusionai/ling-3.0-flash) |
 | zai | zai | `glm-4-air` (CNY 0.5/0.5) | 128K | $0.035 | $0.035 | — | **$0.035** | batch −50% | yes | [manual](https://open.bigmodel.cn/pricing) |
 | openrouter | ibm-granite | `granite-4.0-h-micro` | 131K | $0.017 | $0.112 | — | **$0.041** |  | yes | [direct-api](https://openrouter.ai/ibm-granite/granite-4.0-h-micro) |
-| openrouter | deepseek | `deepseek-v4-flash-latest` | 1.31M | $0.030 | $0.075 | $0.0070 | **$0.041** |  | yes | [direct-api](https://openrouter.ai/~deepseek/deepseek-v4-flash-latest) |
 | openrouter | sao10k | `l3-lunaris-8b` | 8K | $0.040 | $0.050 | — | **$0.043** |  | yes | [direct-api](https://openrouter.ai/sao10k/l3-lunaris-8b) |
 | openrouter | nex-agi | `nex-n2-mini` | 262K | $0.025 | $0.100 | $0.0025 | **$0.044** |  | yes | [direct-api](https://openrouter.ai/nex-agi/nex-n2-mini) |
+| openrouter | deepseek | `deepseek-v4-flash-latest` | 1.31M | $0.030 | $0.100 | $0.0070 | **$0.048** |  | yes | [direct-api](https://openrouter.ai/~deepseek/deepseek-v4-flash-latest) |
 | mistral | mistral | `ministral-3b-latest` | — | $0.050 | $0.050 | $0.010 | **$0.050** | batch −50% | yes | [manual](https://mistral.ai/pricing#api-pricing) |
 | openrouter | upstage | `solar-pro4` | 524K | $0.030 | $0.120 | $0.0060 | **$0.052** |  | yes | [direct-api](https://openrouter.ai/upstage/solar-pro4) |
 | together | together | `lfm2.5-8b-a1b` | — | $0.030 | $0.120 | — | **$0.052** |  | yes | [manual](https://www.together.ai/pricing) |
@@ -438,11 +437,11 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | litellm | alibaba-modelstudio | `qwen-turbo` | 129K | $0.050 | $0.200 | — | **$0.087** |  | yes | [direct-api](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) |
 | litellm | alibaba-modelstudio | `qwen-turbo-latest` | 1M | $0.050 | $0.200 | — | **$0.087** |  | yes | [direct-api](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) |
 | mistral | mistral | `voxtral-small-latest` | — | $0.050 | $0.200 | — | **$0.087** | batch −50% | yes | [manual](https://mistral.ai/pricing#api-pricing) |
-| openrouter | nvidia | `nemotron-3-nano-30b-a3b` | 262K | $0.050 | $0.200 | $0.030 | **$0.087** |  | yes | [direct-api](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b) |
+| openrouter | nvidia | `nemotron-3-nano-30b-a3b` | 262K | $0.050 | $0.200 | $0.025 | **$0.087** |  | yes | [direct-api](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b) |
 | openrouter | microsoft | `phi-4` | 16K | $0.070 | $0.140 | — | **$0.087** |  | yes | [direct-api](https://openrouter.ai/microsoft/phi-4) |
 | together | together | `gpt-oss-20b` | — | $0.050 | $0.200 | — | **$0.087** |  | yes | [manual](https://www.together.ai/pricing) |
-| fireworks | fireworks | `less-than-4b-parameters-size-based-tier` | — | $0.100 | $0.100 | — | **$0.100** |  | yes | [manual](https://docs.fireworks.ai/serverless/pricing) |
-| … | | 289 more | | | | | | | | |
+| openrouter | deepseek | `deepseek-v4-flash` | 1.05M | $0.078 | $0.156 | $0.016 | **$0.097** |  | yes | [direct-api](https://openrouter.ai/deepseek/deepseek-v4-flash) |
+| … | | 291 more | | | | | | | | |
 
 ### Vision / multimodal (33)
 
@@ -453,7 +452,7 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | openrouter | alibaba-modelstudio | `qwen3-vl-30b-a3b-instruct` | 262K | $0.130 | $0.520 | — | **$0.228** |  | yes | [direct-api](https://openrouter.ai/qwen/qwen3-vl-30b-a3b-instruct) |
 | litellm | alibaba-modelstudio | `qwen3-vl-32b-instruct` | 131K | $0.160 | $0.640 | — | **$0.280** |  | yes | [direct-api](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) |
 | deepseek | deepseek | `deepseek-v4-flash-vision-exp` | — | $0.220 | $0.660 | $0.014 | **$0.330** | undefined −50% | yes | [manual](https://api-docs.deepseek.com/quick_start/pricing) |
-| openrouter | deepseek | `deepseek-v4-flash-vision-exp` | 1.05M | $0.220 | $0.660 | $0.014 | **$0.330** | off-peak −50% (sat/sun all-day; mon/tue/wed/thu/fri 00:00-01:00; mon/tue/wed/thu/fri 04:00-06:00; mon/tue/wed/thu/fri 10:00-00:00 UTC) | yes | [direct-api](https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp) |
+| openrouter | deepseek | `deepseek-v4-flash-vision-exp` | 1.05M | $0.220 | $0.660 | $0.0070 | **$0.330** |  | yes | [direct-api](https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp) |
 | openrouter | alibaba-modelstudio | `qwen2.5-vl-72b-instruct` | 128K | $0.250 | $0.750 | — | **$0.375** |  | yes | [direct-api](https://openrouter.ai/qwen/qwen2.5-vl-72b-instruct) |
 | openrouter | baidu-qianfan | `ernie-4.5-vl-424b-a47b` | 123K | $0.420 | $1.25 | — | **$0.627** |  | yes | [direct-api](https://openrouter.ai/baidu/ernie-4.5-vl-424b-a47b) |
 | tencent-hunyuan | tencent-hunyuan | `hunyuan-t1-vision` (CNY 3/9) | — | $0.420 | $1.26 | — | **$0.630** | free-tier | yes | [manual](https://cloud.tencent.com/document/product/1729/97731) |
@@ -482,7 +481,7 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | litellm | xai | `grok-vision-beta` | 8K | $5.00 | $15.00 | — | **$7.50** |  | yes | [direct-api](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) |
 | openrouter | openai | `gpt-5.4-image-2` | 272K | $8.00 | $15.00 | $2.00 | **$9.75** |  | yes | [direct-api](https://openrouter.ai/openai/gpt-5.4-image-2) |
 
-### Free / $0 (32)
+### Free / $0 (31)
 
 | Provider | Vendor | Model | Ctx | Input | Output | Cache read | Blended | Promo | Compat | Source |
 |---|---|---|---:|---:|---:|---:|---:|---|---|---|
@@ -514,7 +513,6 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 | openrouter | nvidia | `nemotron-3.5-content-safety:free` | 128K | $0 | $0 | — | **$0** |  | yes | [direct-api](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
 | openrouter | nvidia | `nemotron-3.5-lightning:free` | 1M | $0 | $0 | — | **$0** |  | yes | [direct-api](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | openrouter | cohere | `north-mini-code:free` | 256K | $0 | $0 | — | **$0** |  | yes | [direct-api](https://openrouter.ai/cohere/north-mini-code:free) |
-| openrouter | stealth | `ox-alpha` | 1.05M | $0 | $0 | — | **$0** |  | yes | [direct-api](https://openrouter.ai/stealth/ox-alpha) |
 | together | together | `ternary-bonsai-27b` | — | $0 | $0 | — | **$0** |  | yes | [manual](https://www.together.ai/pricing) |
 | zai | zai | `glm-4-flash` (CNY 0/0) | 128K | $0 | $0 | — | **$0** | free-tier | yes | [manual](https://open.bigmodel.cn/pricing) |
 | zai | zai | `glm-4.7-flash` (CNY 0/0) | 200K | $0 | $0 | $0 | **$0** | free-tier | yes | [manual](https://open.bigmodel.cn/pricing) |
@@ -523,8 +521,10 @@ Sorted by effective blended price (promo/off-peak applied when available). Only 
 
 | Source | Method | Status | Rows | Note |
 |---|---|---|---:|---|
-| openrouter | direct-api | ok | 351 |  |
+| openrouter | direct-api | ok | 352 |  |
 | litellm | direct-api | ok | 204 |  |
+| google | public-page | ok | 0 |  |
+| deepseek | public-page | ok | 1 |  |
 | manual:browser-2026-08-26-b.json | manual | ok | 137 |  |
 | manual:browser-2026-08-26.json | manual | ok | 25 |  |
 | manual:seed-2026-08-web-research.json | manual | ok | 19 |  |
